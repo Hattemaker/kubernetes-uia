@@ -1,0 +1,13 @@
+@startuml Docker
+scale 600 height
+!include skatt.iuml
+
+
+"Dockerfile" -->[build] "Docker Image"
+"Docker Image" --> [tag] "Docker Image"
+"Docker Image" --> [push] "Docker Registry"
+"Docker Image" --> [run] "Docker Container" <<OS2>>
+"Docker Registry" <<OS4>> --> [pull] "Docker Image"
+
+
+@enduml
