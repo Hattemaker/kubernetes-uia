@@ -21,3 +21,5 @@ gradle-app.setting
 
 gradle.properties
 gradle.properties.proxy
+
+/apps/greeter/greeter

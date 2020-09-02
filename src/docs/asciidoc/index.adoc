@@ -3,12 +3,6 @@ Espen Strømland <espen.stromland@skatteetaten.no> & Bjarte Karlsen <bjarte.karl
 2020-09-10
 :revnumber: {project-version}
 
-== Plantmul
-plantuml::docker.puml["docker", "png"]
-
-== Background image
-image::images/parallax.jpg[canvas, size=cover]
-
 == Hvem er vi?
 - Bjarte Stien Karlsen
   - Ferdig utdannet 2005, startet i Skatteetaten våren 2015.
@@ -26,64 +20,4 @@ image::images/parallax.jpg[canvas, size=cover]
 - Våre oppgaver i Skatt:
   - Automatisere og standardisere bygg og leveransekjeden.
 
-== Container
-- Begreper
-  - Dockerfile
-  - Image
-  - Tag
-  - Container
-  - Repository
-- Prinsipper
-- Lagdelt
-- Minste privilegier
-- Self contained
-- Deler kjerne (Vis bilde)
-- Immutable
-- Docker mest brukte kontainerteknologi
-
-== Container demo
-Containere demo	15 min	
-Tag
-Local caching
-Start image
-Vise noen kjekke docker kommandoer
-
-Forenklet bruk av kontainere	5 min	
-Nevne andre teknologier som gjør det enklere å jobbe med kontainere.
-https://buildpacks.io/
-https://www.baeldung.com/spring-boot-docker-images
-
-Buildpacks demo	5 min	Vise bruk av buildpacks	
-Pause	10 min	Kan stille spørsmål i pausen	
-Dele image / containere med andre	5 min	
-DockerHub = Container Registry
-
-DockerHub demo	5 min	
-Publiser image til DockerHub
-Start Image fra DockerHub
-
-Kubernetes	30 min	
-Hva er Kubernetes?
-Ressurser og labler
-Dette kommer vi inn på i demo
-Lastbalansering
-Reconsiliation
-Nettverk / Routing
-Rullerende oppgradering
-Master node og worker nodes
-
-Kubernetes demo	15 min	
-Opprett Pod ressurs med referanse til vårt image på DockerHub
-Apply Pod-ressurs
-Undersøk applikasjon på Kubernetes
-Deployment, ReplicaSet, Secret, Ingress?
-Illustrer hvordan flyten henger sammen.
-
-Hvordan gjør vi det i Skatteetaten?	10 min	
-500+ utviklere
-Behov for automatisering og standardisering
-Kontrakter - Enklere konsepter
-GitHub - https://github.com/Skatteetaten
-
-Pause	10 min	Kan stille spørsmål i pausen	
-Hands on	? min	Studentene prøver selv?
+include::docker.adoc[]

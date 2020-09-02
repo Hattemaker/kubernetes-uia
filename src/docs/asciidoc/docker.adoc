@@ -1,0 +1,65 @@
+
+== Container
+- Begreper
+- Prinsipper
+- Lagdelt
+- Minste privilegier
+- Self contained
+- Immutable
+- Docker mest brukte kontainerteknologi
+
+== Container - Begreper
+// Beskriver hvordan et Docker image skal virke.
+// OS, hvilke egenskaper skal det ha, konfigurasjon, skal den kunne nås på http?, hva skal kjøres i containeren.
+* Dockerfile
+// Et produkt av Dockerfile. 
+* Image
+// Versjonering av images
+* Tag
+// Kjørende instans av et image.
+* Container
+// En database som inneholder images.
+* Registry
+
+== Container - Begreper
+plantuml::docker.puml["docker", "png"]
+
+== Container - Prinsipper
+
+== Container - Lagdelt
+
+== Container - Minste privilegier
+
+== Container - Self contained
+// Deler kjerne (Vis bilde)
+
+== Container - Immutable
+
+== Container - Docker
+
+== Container Demo
+// Vis app
+// Forklar Dockerfile
+// Bygg
+
+// Tag
+// Start image
+// Vise noen kjekke docker kommandoer
+
+== Forenklet bruk av containers
+Nevne andre teknologier som gjør det enklere å jobbe med kontainere.
+https://buildpacks.io/
+https://www.baeldung.com/spring-boot-docker-images
+
+== Buildpacks demo	5 min	
+Vise bruk av buildpacks	
+
+== Pause	10 min	
+// Kan stille spørsmål i pausen	
+
+== Dele image / containere med andre	5 min	
+DockerHub = Container Registry
+
+=== DockerHub demo	5 min	
+Publiser image til DockerHub
+Start Image fra DockerHub

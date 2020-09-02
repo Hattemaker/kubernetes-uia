@@ -26,6 +26,7 @@ asciidoctorRevealJs {
     from('src/docs/asciidoc') {
       include 'style/*.svg'
       include 'images/*'
+      include 'docker.adoc'
     }
   }
   attributes 'sourceDir': 'src/docs/asciidoc',
