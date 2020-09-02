@@ -21,3 +21,51 @@ Espen Strømland <espen.stromland@skatteetaten.no> & Bjarte Karlsen <bjarte.karl
   - Automatisere og standardisere bygg og leveransekjeden.
 
 include::docker.adoc[]
+include::kubernetes.adoc[]
+
+== Container
+- Begreper
+  - Dockerfile
+  - Image
+  - Tag
+  - Container
+  - Repository
+- Prinsipper
+- Lagdelt
+- Minste privilegier
+- Self contained
+- Deler kjerne (Vis bilde)
+- Immutable
+- Docker mest brukte kontainerteknologi
+
+== Container demo
+Containere demo	15 min	
+Tag
+Local caching
+Start image
+Vise noen kjekke docker kommandoer
+
+Forenklet bruk av kontainere	5 min	
+Nevne andre teknologier som gjør det enklere å jobbe med kontainere.
+https://buildpacks.io/
+https://www.baeldung.com/spring-boot-docker-images
+
+Buildpacks demo	5 min	Vise bruk av buildpacks	
+Pause	10 min	Kan stille spørsmål i pausen	
+Dele image / containere med andre	5 min	
+DockerHub = Container Registry
+
+DockerHub demo	5 min	
+Publiser image til DockerHub
+Start Image fra DockerHub
+
+
+Hvordan gjør vi det i Skatteetaten?	10 min	
+500+ utviklere
+Behov for automatisering og standardisering
+Kontrakter - Enklere konsepter
+GitHub - https://github.com/Skatteetaten
+
+Pause	10 min	Kan stille spørsmål i pausen	
+Hands on	? min	Studentene prøver selv?
+

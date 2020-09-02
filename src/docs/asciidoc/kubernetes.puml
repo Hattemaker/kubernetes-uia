@@ -1,0 +1,14 @@
+@startuml
+scale 600 height
+!include skatt.iuml
+
+
+Deployment<<OS1>> -->[ruller ut ny versjon]ReplicaSet <<OS1>>
+ReplicaSet -->[starter] Pod <<OS3>>
+
+Pod -->[inneholder]Container <<OS2>>
+Service <<OS1>>-left->[lastbalanserer] Pod
+Ingress <<OS1>> -up->[eksponerer] Service
+Deployment -left-> [bruker]ConfigMap<<OS1>>
+Deployment -right-> [bruker]Secret<<OS1>>
+@enduml

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: uia-app
+    labels:
+        app: uia-app
+spec:
+    containers:
+        -   image: stromland/uia-app
+            name: uia-app
+            ports:
+                -   containerPort: 8080
