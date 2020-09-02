@@ -19,6 +19,14 @@ docker build -t uia-app .
 # Start Docker containeren
 # Binder lokal port til container port. <lokal>:<container>
 docker run -p 8080:8080 uia-app
+
+# Push til DockerHub
+
+docker login
+
+docker tag uia-app:latest <repo>/uia-app:latest
+
+docker push <repo>/uia-app:latest
 ```
 
 ## Kjekke kommandoer

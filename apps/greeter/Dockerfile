@@ -22,5 +22,5 @@ EXPOSE 8080
 # Alle kommandoer som blir kjørt fra nå av kjøres som brukeren appuser
 USER student
 
-# Forteller containeren hva som skal startes/kjøres.
-ENTRYPOINT [ "./greeter" ]
+# Forteller containeren hva som skal startes/kjøres
+CMD [ "./greeter" ]

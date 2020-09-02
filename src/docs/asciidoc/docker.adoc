@@ -13,6 +13,7 @@
 // OS, hvilke egenskaper skal det ha, konfigurasjon, skal den kunne nås på http?, hva skal kjøres i containeren.
 * Dockerfile
 // Et produkt av Dockerfile. 
+// An image does not have state and it never changes
 * Image
 // Versjonering av images
 * Tag
@@ -40,26 +41,22 @@ plantuml::docker.puml["docker", "png"]
 == Container Demo
 // Vis app
 // Forklar Dockerfile
+// To reduce complexity, dependencies, file sizes, and build times, avoid installing extra or unnecessary packages just because they might be “nice to have.” For example, you don’t need to include a text editor in a database image.
+// For the ADD and COPY instructions, the contents of the file(s) in the image are examined and a checksum is calculated for each file. The last-modified and last-accessed times of the file(s) are not considered in these checksums. During the cache lookup, the checksum is compared against the checksum in the existing images. If anything has changed in the file(s), such as the contents and metadata, then the cache is invalidated.
 // Bygg
-
 // Tag
 // Start image
 // Vise noen kjekke docker kommandoer
 
+== Dele image / containere med andre
+- DockerHub = Container Registry
+
+== DockerHub demo
+- Publiser image til DockerHub
+- Start Image fra DockerHub
+
 == Forenklet bruk av containers
-Nevne andre teknologier som gjør det enklere å jobbe med kontainere.
-https://buildpacks.io/
-https://www.baeldung.com/spring-boot-docker-images
+- https://buildpacks.io/
 
-== Buildpacks demo	5 min	
-Vise bruk av buildpacks	
-
-== Pause	10 min	
+== Pause
 // Kan stille spørsmål i pausen	
-
-== Dele image / containere med andre	5 min	
-DockerHub = Container Registry
-
-=== DockerHub demo	5 min	
-Publiser image til DockerHub
-Start Image fra DockerHub
