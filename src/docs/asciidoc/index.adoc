@@ -7,67 +7,62 @@ Espen Strømland <espen.stromland@skatteetaten.no> & Bjarte Karlsen <bjarte.karl
 - Bjarte Stien Karlsen
   * Ferdig utdannet 2005, startet i Skatteetaten våren 2015.
   * Arkitekt og utvikler.
+  - Ferdig utdannet 2005, startet i Skatteetaten våren 2015.
+  - UiA og NTNU, Master informatikk
+  - Arkitekt og utvikler.
 - Espen Strømland
   * Ferdig utdannet 2015, startet i Skatteetaten våren 2016 
   * Teamleder og utvikler.
 
-- Alle i vårt team har gått på UiA Grimstad / Kristiansand.
 
+=======
+== !
+[.single-headline2]
+Alle på vårt team har gått på UiA Grimstad / Kristiansand.
 
 == Litt om Skatteetaten
 - 500+ utviklere, ca 6700 totalt.
 - Startet med OpenShift i 2015.
 - Våre oppgaver i Skatt:
-  * Utvikle verktøy som forenkler bruk av container platform. 
+  * Utvikle verktøy som forenkler bruk av container platform.
   * Automatisere og standardisere bygg og leveransekjeden.
   * Utviklingsstøtte.
 
+== Agenda
+ - Docker/Containere
+ - Kubernetes
+ - Hvordan gjør skatteetaten det?
+ - HandsOn
+
+== !
+[.single-headline2]
+Docker
+
 include::docker.adoc[]
+
+== !
+[.single-headline2]
+Pause
+
+== !
+[.single-headline2]
+Kubernetes
+
 include::kubernetes.adoc[]
 
-== Container
-- Begreper
-  - Dockerfile
-  - Image
-  - Tag
-  - Container
-  - Repository
-- Prinsipper
-- Lagdelt
-- Minste privilegier
-- Self contained
-- Deler kjerne (Vis bilde)
-- Immutable
-- Docker mest brukte kontainerteknologi
+== !
+[.single-headline2]
+Pause
 
-== Container demo
-Containere demo	15 min	
-Tag
-Local caching
-Start image
-Vise noen kjekke docker kommandoer
+== !
+[.single-headline2]
+Hvordan gjør skatteetaten det?
 
-Forenklet bruk av kontainere	5 min	
-Nevne andre teknologier som gjør det enklere å jobbe med kontainere.
-https://buildpacks.io/
-https://www.baeldung.com/spring-boot-docker-images
+include::skatteetaten.adoc[]
 
-Buildpacks demo	5 min	Vise bruk av buildpacks	
-Pause	10 min	Kan stille spørsmål i pausen	
-Dele image / containere med andre	5 min	
-DockerHub = Container Registry
+== !
+[.single-headline2]
+Hands-On
 
-DockerHub demo	5 min	
-Publiser image til DockerHub
-Start Image fra DockerHub
-
-
-Hvordan gjør vi det i Skatteetaten?	10 min	
-500+ utviklere
-Behov for automatisering og standardisering
-Kontrakter - Enklere konsepter
-GitHub - https://github.com/Skatteetaten
-
-Pause	10 min	Kan stille spørsmål i pausen	
-Hands on	? min	Studentene prøver selv?
+include::handson.adoc[]
 

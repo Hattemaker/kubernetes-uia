@@ -22,6 +22,9 @@ Kubernetes
  * komponere ressurser ved å bruke andre ressurser
  * tilgangskontroll på ressurs/gruppe nivå
 
+== !
+image::images/kubernetes-architecture.png[canvas, size=cover]
+
 == Pod
 - en pod er den minste 'deploybare' enheten på kubernetes
 - alle andre høyere nivå konsepter har Pods i bunnen
@@ -35,15 +38,14 @@ include::kubernetes/pod-uia-app.yaml[]
 == Demo
  - kjøre vår app på Kubernetes
 
-
-== Typer payloads
- - Jobs/CronJobs
- - Deployment
- - StatefulSet
- - DaemonSet
-
 == Ressurser
 plantuml::kubernetes.puml["kubernetes","png"]
+
+== Typer workload
+- Jobs/CronJobs
+- Deployment
+- StatefulSet
+- DaemonSet
 
 Kubernetes demo	15 min
 Opprett Pod ressurs med referanse til vårt image på DockerHub
