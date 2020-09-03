@@ -16,6 +16,12 @@ WORKDIR /api
 # Kopierer vår applikasjon til /api
 COPY greeter .
 
+# Mulighet for å sende med --build-arg til docker build.
+ARG version=1
+
+# Setter miljøvariabel, bruker ARG her
+ENV VERSION=${version}
+
 # Forteller containeren at vår applikasjon skal kunne nås på port 8080. 
 EXPOSE 8080
 
