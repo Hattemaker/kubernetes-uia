@@ -16,6 +16,15 @@ spec:
         spec:
             containers:
                 - image: stromland/uia-app:1
+                  imagePullPolicy: Always
                   name: uia-app
                   ports:
                       -   containerPort: 8080
+                  env:
+                     - name: NAME
+                       valueFrom:
+                         fieldRef:
+                           fieldPath: metadata.name
+                  readinessProbe:
+                      tcpSocket:
+                          port: 8080
