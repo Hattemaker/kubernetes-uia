@@ -1,8 +1,37 @@
 
-Hvordan gjør vi det i Skatteetaten?	10 min
-500+ utviklere
-Behov for automatisering og standardisering
-Kontrakter - Enklere konsepter
-GitHub - https://github.com/Skatteetaten
+== Kubernetes i Skatteetaten
+ * Har kjørt OpenShift siden 2015
+ ** en distribusjon av Kubernetes fra RedHat
+ * ønsket en 'industrialisert' plattform hvor team kan være produktive.
 
-Hvordan få manifester inn på clustrene.
+== Aurora Plattform
+ * https://skatteetaten.github.io/aurora/
+ * implementasjonen av plattformen er skjult for utviklerne
+ * 3 formelle kontrakter
+
+== Byggekontrakt
+* Deklerativ CI logikk med Jenkins og Jenkinsfile
+* Produsererer zip fil av en applikasjon som lagres sentralt
+** openshift/metadata.json
+** oppstarts parametres
+** evt biblioteker
+* Semantisk versjonering
+
+== Deploykontrakt
+* deklarativ AuroraConfig
+** komponere konfigurasjon
+* oppgraderingsstrategi
+** latest, ingen brekkende endringer, nye features, nye feilfikser, 'patcher', låst, samme som produksjon, SNAPSHOT
+* deploy vil overskrive eksisterende state
+
+== Kjørekontrakt
+* microservices/ 12-faktor
+* kan og vil bli drept hvis plattformen krever det
+* separere app og administrasjonstrafikk
+* bruk delt logback konfigurasjon
+* management interface
+** /actuator
+** /info
+** /health
+** /prometheus
+** /env

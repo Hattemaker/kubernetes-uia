@@ -1,6 +1,3 @@
-== !
-[.single-headline2]
-Kubernetes
 
 == Hvorfor Kubernetes
  * kjøre applikasjoner uten å bry seg for mye om servere/nettverk
@@ -39,12 +36,14 @@ include::kubernetes/pod.yaml[]
 include::kubernetes/service.yaml[]
 ----
 
-== Demo
- - kjøre vår app på Kubernetes
+== !
+[.single-headline2]
+ DEMO: kjøre vår app på Kubernetes via Docker for Mac
 
 == Hva er problemet med denne løsningen?
  - Hvis poden forsvinner er den borte, akkurat som med docker
  - Skalering/lastbalansering er heller ikke håndtert
+ - Hva skjer hvis deploy feiler?
 
 == Deployment
  - høyere nivå konsept som komponerer ved å bruke pod
