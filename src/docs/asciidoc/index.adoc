@@ -14,8 +14,6 @@ Espen Strømland <espen.stromland@skatteetaten.no> & Bjarte Karlsen <bjarte.karl
   * Ferdig utdannet 2015, startet i Skatteetaten våren 2016 
   * Teamleder og utvikler.
 
-
-=======
 == !
 [.single-headline2]
 Alle på vårt team har gått på UiA Grimstad / Kristiansand.
