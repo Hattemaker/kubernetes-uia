@@ -4,27 +4,26 @@ Espen Strømland <espen.stromland@skatteetaten.no> & Bjarte Karlsen <bjarte.karl
 :revnumber: {project-version}
 
 == Hvem er vi?
-- Bjarte Stien Karlsen
-  * Ferdig utdannet 2005, startet i Skatteetaten våren 2015.
-  * Arkitekt og utvikler.
-  - Ferdig utdannet 2005, startet i Skatteetaten våren 2015.
-  - UiA og NTNU, Master informatikk
-  - Arkitekt og utvikler.
-- Espen Strømland
-  * Ferdig utdannet 2015, startet i Skatteetaten våren 2016 
-  * Teamleder og utvikler.
+* Bjarte Stien Karlsen
+  ** Ferdig utdannet 2005, startet i Skatteetaten våren 2015.
+  ** Arkitekt og utvikler.
+  ** UiA og NTNU, Master informatikk
+  ** Arkitekt og utvikler.
+* Espen Strømland
+  ** Ferdig utdannet 2015, startet i Skatteetaten våren 2016
+  ** Teamleder og utvikler.
 
 == !
 [.single-headline2]
 Alle på vårt team har gått på UiA Grimstad / Kristiansand.
 
 == Litt om Skatteetaten
-- 500+ utviklere, ca 6700 totalt.
-- Startet med OpenShift i 2015.
-- Våre oppgaver i Skatt:
-  * Utvikle verktøy som forenkler bruk av container platform.
-  * Automatisere og standardisere bygg og leveransekjeden.
-  * Utviklingsstøtte.
+* 500+ utviklere, ca 6700 totalt.
+* Startet med OpenShift i 2015.
+* Våre oppgaver i Skatt:
+** Utvikle verktøy som forenkler bruk av container platform.
+** Automatisere og standardisere bygg og leveransekjeden.
+** Utviklingsstøtte.
 
 == Agenda
  - Docker/Containere
