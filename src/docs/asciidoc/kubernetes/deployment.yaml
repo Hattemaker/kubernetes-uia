@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    labels:
+        app: uia-app
+    name: uia-app
+spec:
+    replicas: 2
+    selector:
+        matchLabels:
+            app: uia-app
+    template:
+        metadata:
+            labels:
+                app: uia-app
+        spec:
+            containers:
+                - image: stromland/uia-app:1
+                  name: uia-app
+                  ports:
+                      -   containerPort: 8080

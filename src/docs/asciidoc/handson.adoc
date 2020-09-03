@@ -1,3 +1,6 @@
 
 Pause	10 min	Kan stille spørsmål i pausen
 Hands on	? min	Studentene prøver selv?
+
+
+https://github.com/digitalocean/doks-example

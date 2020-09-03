@@ -3,7 +3,7 @@
 Kubernetes
 
 == Hvorfor Kubernetes
- * kjøre applikasjoner uten å bry seg for mye om servere/nettverk osv.
+ * kjøre applikasjoner uten å bry seg for mye om servere/nettverk
  * kjøre flere applikasjoner som prater sammen
  * håndtere oppgradering og sletting av applikasjoner ikke bare at man lager nye
  * kjøre en applikasjon i flere instanser og lastbalansere trafikk mellom dem
@@ -19,11 +19,6 @@ Kubernetes
  * konfigurasjon er ønsket tilstand
  * apiGrupper og ressurser
  * merkelapper (labels)
- * komponere ressurser ved å bruke andre ressurser
- * tilgangskontroll på ressurs/gruppe nivå
-
-== !
-image::images/kubernetes-architecture.png[canvas, size=cover]
 
 == Pod
 - en pod er den minste 'deploybare' enheten på kubernetes
@@ -32,11 +27,46 @@ image::images/kubernetes-architecture.png[canvas, size=cover]
 == Pod Eksempel
 [source,yaml]
 ----
-include::kubernetes/pod-uia-app.yaml[]
+include::kubernetes/pod.yaml[]
+----
+== Service
+- minste deploybare enhet for å lastbalansere og styre trafikk til applikasjoner
+- opererer på ip/port nivå
+
+== Service Eksempel
+[source,yaml]
+----
+include::kubernetes/service.yaml[]
 ----
 
 == Demo
  - kjøre vår app på Kubernetes
+
+== Hva er problemet med denne løsningen?
+ - Hvis poden forsvinner er den borte, akkurat som med docker
+ - Skalering/lastbalansering er heller ikke håndtert
+
+== Deployment
+ - høyere nivå konsept som komponerer ved å bruke pod
+ - kan skalere i flere instanser
+ - har en rekke 'sane' default verdier
+
+== Deployment Eksempel
+[source,yaml]
+----
+include::kubernetes/deployment.yaml[]
+----
+
+== Demo livssyklus
+ * fjerne pod og gammel service
+ * deploy med deployment
+ * vise
+ ** rullerende oppgradering
+ ** rulle tilbake ved feil
+
+
+== !
+image::images/kubernetes-architecture.png[canvas, size=cover]
 
 == Ressurser
 plantuml::kubernetes.puml["kubernetes","png"]
@@ -46,16 +76,3 @@ plantuml::kubernetes.puml["kubernetes","png"]
 - Deployment
 - StatefulSet
 - DaemonSet
-
-Kubernetes demo	15 min
-Opprett Pod ressurs med referanse til vårt image på DockerHub
-Apply Pod-ressurs
-Undersøk applikasjon på Kubernetes
-Deployment, ReplicaSet, Secret, Ingress?
-Illustrer hvordan flyten henger sammen.
-
-
-== Trafikk inn til Pod
-```
-k expose pod uia-app  --port=8080 --type=LoadBalancer
-```

@@ -6,7 +6,7 @@ metadata:
         app: uia-app
 spec:
     containers:
-        -   image: stromland/uia-app
+        -   image: stromland/uia-app:1
             name: uia-app
             ports:
                 -   containerPort: 8080
