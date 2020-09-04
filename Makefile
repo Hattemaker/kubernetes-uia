@@ -1,4 +1,4 @@
-build-doc:
+doc:
 	./gradlew --no-build-cache
 
 open:

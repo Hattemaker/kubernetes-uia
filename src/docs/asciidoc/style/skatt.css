@@ -292,9 +292,9 @@ body {
 .reveal a {
   color: #268bd2;
   text-decoration: none;
-  -webkit-transition: color .15s ease;
-  -moz-transition: color .15s ease;
-  transition: color .15s ease;
+  -webkit-transition: color 0.15s ease;
+  -moz-transition: color 0.15s ease;
+  transition: color 0.15s ease;
 }
 
 /* line 246, ../../../../src/main/reveal.js-3.3.0/css/theme/template/theme.scss */
@@ -329,9 +329,9 @@ body {
 
 /* line 276, ../../../../src/main/reveal.js-3.3.0/css/theme/template/theme.scss */
 .reveal a img {
-  -webkit-transition: all .15s linear;
-  -moz-transition: all .15s linear;
-  transition: all .15s linear;
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  transition: all 0.15s linear;
 }
 
 /* line 282, ../../../../src/main/reveal.js-3.3.0/css/theme/template/theme.scss */
@@ -419,12 +419,14 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  font-family: "Helvetica-Light","HelveticaNeue-Light","Helvetica Neue Light",Helvetica,"Helvetica Neue",Arial,"Lucida Grande",sans-serif;
+  font-family: "Helvetica-Light", "HelveticaNeue-Light", "Helvetica Neue Light",
+    Helvetica, "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
 }
 
 /* line 24, ../../../../src/main/sass/skatt.scss */
 .reveal {
-  font-family: "Helvetica-Light","HelveticaNeue-Light","Helvetica Neue Light",Helvetica,"Helvetica Neue",Arial,"Lucida Grande",sans-serif;
+  font-family: "Helvetica-Light", "HelveticaNeue-Light", "Helvetica Neue Light",
+    Helvetica, "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
   background: white;
 }
 /* line 29, ../../../../src/main/sass/skatt.scss */
@@ -489,3 +491,6 @@ body {
   margin: 5px;
 }
 
+.reveal pre.scroll code {
+  overflow: auto;
+}

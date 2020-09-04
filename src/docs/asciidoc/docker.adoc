@@ -1,15 +1,20 @@
+== Hvorfor containere?
+* Isolert applikasjonsmiljø.
+  ** Kode.
+  ** Konfigurasjon.
+  ** Tilhørende verktøy.
+* Sammen lignet med VM så:
+  ** Tar containere opp mindre diskplass enn VM.
+  ** Bruker mindre minne.
+  ** Raskere oppstart og restart.
+* Docker er den mest brukte container-løsningen.
 
-== Container
-- Begreper
-- Prinsipper
-- Lagdelt
-- Minste privilegier
-- Self contained
-- Immutable
-- Docker mest brukte kontainerteknologi
+== !
+image::images/containers-vs-vms.png[container,90%,90%]
 
-== Container - Begreper
-// Beskriver hvordan et Docker image skal virke.
+== Begreper
+// Et sett med kommandoer
+// Beskriver hva og hvordan innhold skal kjøres. Pakkes til et image.
 // OS, hvilke egenskaper skal det ha, konfigurasjon, skal den kunne nås på http?, hva skal kjøres i containeren.
 * Dockerfile
 // Et produkt av Dockerfile. 
@@ -22,23 +27,46 @@
 // En database som inneholder images.
 * Registry
 
-== Container - Begreper
+== Begreper
 plantuml::docker.puml["docker", "png"]
 
-== Container - Prinsipper
+== Dockerfile
+[.scroll]
+[source]
+----
+include::../../../apps/greeter/Dockerfile[]
+----
 
-== Container - Lagdelt
+== Image er lagdelt
+* Hver kommando i Dockerfile oppretter et lag.
+* Flere images kan gjenbruke tidligere lag. Sparer diskplass og gir raskere byggetid.
+* Vær bevisst på hvordan lag kan påvirke neste kommando.
 
-== Container - Minste privilegier
+== Image er immutable
+* Det er ikke mulig å endre et image etter det er bygd.
+* For å kunne gjøre endringer i et image så må man bygge på nytt.
 
-== Container - Self contained
-// Deler kjerne (Vis bilde)
+== Tagging av Image
+* Brukes for å si noe om versjon og variant av et image.
 
-== Container - Immutable
+image::images/image-tags.png[tags]
 
-== Container - Docker
+== Kjør containere med minste privilegier
+* Ikke mulig å kunne gjøre endring på host fra en container.
+* Containere deler kjerne med host.
+* Hvis noen skulle finne sikkerhetshull i kernel så kan dette potensielt utnyttes fra containeren.
+* Best practice: Ikke kjør containeren som root-bruker.
+  ** Konfigureres i Dockerfile
 
-== Container Demo
+== Container Registry
+* Lokal registry
+  ** `docker images`
+* Distribuerte container registries:
+  ** DockerHub (Mest kjent)
+  ** Quay (Red Hat)
+  ** Google-, Azure-, Amazon (elastic) container registry
+
+== Demo
 // Vis app
 // Forklar Dockerfile
 // To reduce complexity, dependencies, file sizes, and build times, avoid installing extra or unnecessary packages just because they might be “nice to have.” For example, you don’t need to include a text editor in a database image.
@@ -47,16 +75,11 @@ plantuml::docker.puml["docker", "png"]
 // Tag
 // Start image
 // Vise noen kjekke docker kommandoer
+// - Publiser image til DockerHub
+// - Start Image fra DockerHub
 
-== Dele image / containere med andre
-- DockerHub = Container Registry
-
-== DockerHub demo
-- Publiser image til DockerHub
-- Start Image fra DockerHub
-
-== Forenklet bruk av containers
-- https://buildpacks.io/
+== Annet
+* Docker Compose
+* Docker Swarm
 
 == Pause
-// Kan stille spørsmål i pausen	
