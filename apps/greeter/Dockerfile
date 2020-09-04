@@ -8,12 +8,12 @@ RUN apk update && apk add ca-certificates && rm -rf /var/cache/apk/*
 RUN addgroup -S uia && adduser -S student -G uia
 
 # Oppretter mappe hvor applikasjonen skal ligge.
-RUN mkdir -p /api
+RUN mkdir -p /home/student/app
 
 # Setter hvilken mappe containeren skal jobbe i.
-WORKDIR /api
+WORKDIR /home/student/app
 
-# Kopierer vår applikasjon til /api
+# Kopierer vår applikasjon til vår WORKDIR som er /home/student/app
 COPY greeter .
 
 # Mulighet for å sende med --build-arg til docker build.
@@ -29,4 +29,4 @@ EXPOSE 8080
 USER student
 
 # Forteller containeren hva som skal startes/kjøres
-CMD [ "./greeter" ]
+ENTRYPOINT [ "./greeter" ] 
