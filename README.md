@@ -23,8 +23,9 @@ nivå abstraksjoner som det kan være verd å se på:
  - https://spring.io/blog/2020/01/27/creating-docker-images-with-spring-boot-2-3-0-m1
  - https://github.com/GoogleContainerTools/jib
  - https://github.com/GoogleContainerTools/kaniko
- 
+ - https://github.com/Skatteetaten/architect 
 ### Kubernetes
+
 
  - [Intoduksjon til kubernetes](https://www.digitalocean.com/community/tutorials/an-introduction-to-kubernetes)
  - [Kuberetes dokumentasjon](https://kubernetes.io/docs/home/)
@@ -36,4 +37,4 @@ Det finnes mange forskjellige teknikker og verktøy for å konfigurere kubernete
  - https://oam.dev/
  - https://www.weave.works/technologies/gitops/
  - https://www.pulumi.com/
- 
+ - https://skatteetaten.github.io/aurora/ 
