@@ -1,0 +1,15 @@
+# Eksempel på hvordan sette opp begge applikasjoner med docker-compose
+version: "3.8"
+services:
+  greeter:
+    image: greeter:latest
+    environment:
+      NAME: Greeter
+    ports:
+      - 8080:8080
+  repeater:
+    image: repeater:latest
+    environment:
+      GREETER_SERVICE_URL: http://greeter:8080
+    links:
+      - "greeter"
