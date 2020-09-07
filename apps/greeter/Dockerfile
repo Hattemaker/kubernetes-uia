@@ -1,5 +1,5 @@
 # Base imaget vi bruker for denne containeren.
-FROM alpine:latest
+FROM alpine:3.12
 
 # Oppdaterer pakker, og legge til sertifikater og til slutt sletter cache fra package manager.
 RUN apk update && apk add ca-certificates && rm -rf /var/cache/apk/*

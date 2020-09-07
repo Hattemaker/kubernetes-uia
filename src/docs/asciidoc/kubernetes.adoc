@@ -1,11 +1,11 @@
 
-== Hvorfor Kubernetes
+== Hvorfor
  * kjøre applikasjoner uten å bry seg for mye om servere/nettverk
  * kjøre flere applikasjoner som prater sammen
  * håndtere oppgradering og sletting av applikasjoner ikke bare at man lager nye
  * kjøre en applikasjon i flere instanser og lastbalansere trafikk mellom dem
 
-== Hvilke egenskaper gir det deg
+== Egenskaper
  * oppgradere en applikasjon til en ny versjon i fart
  * rulle tilbake ved feil
  * skalere en applikasjon i flere instanser
@@ -38,10 +38,10 @@ include::../../../kubernetes/service.yaml[]
 
 == !
 [.single-headline2]
- DEMO: kjøre vår app på Kubernetes via Docker for Mac
+demo: kjøre vår app på Kubernetes via Docker for Mac
 
 == Hva er problemet med denne løsningen?
- - Hvis poden forsvinner er den borte, akkurat som med docker
+ - Hvis poden forsvinner er den borte
  - Skalering/lastbalansering er heller ikke håndtert
  - Hva skjer hvis deploy feiler?
 
@@ -57,21 +57,20 @@ include::../../../kubernetes/deployment.yaml[]
 ----
 
 == Demo livssyklus
- * fjerne pod og gammel service
+ * fjerne gammel pod
  * deploy med deployment
  * vise
  ** rullerende oppgradering
  ** rulle tilbake ved feil
 
-
-== !
-image::images/kubernetes-architecture.png[canvas, size=cover]
-
 == Ressurser
 plantuml::kubernetes.puml["kubernetes","png"]
 
 == Typer workload
-- Jobs/CronJobs
 - Deployment
+- Jobs/CronJobs
 - StatefulSet
 - DaemonSet
+
+== !
+image::images/kubernetes-architecture.png[canvas, size=cover]

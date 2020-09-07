@@ -24,8 +24,8 @@ nivå abstraksjoner som det kan være verd å se på:
  - https://github.com/GoogleContainerTools/jib
  - https://github.com/GoogleContainerTools/kaniko
  - https://github.com/Skatteetaten/architect 
+ 
 ### Kubernetes
-
 
  - [Intoduksjon til kubernetes](https://www.digitalocean.com/community/tutorials/an-introduction-to-kubernetes)
  - [Kuberetes dokumentasjon](https://kubernetes.io/docs/home/)
@@ -38,3 +38,8 @@ Det finnes mange forskjellige teknikker og verktøy for å konfigurere kubernete
  - https://www.weave.works/technologies/gitops/
  - https://www.pulumi.com/
  - https://skatteetaten.github.io/aurora/ 
+ 
+ Verktøy for å jobbe med kubernetes som kan være fine å vite om er:
+  - https://github.com/derailed/k9s
+  - https://github.com/lensapp/lens
+  - https://github.com/kubernetes-sigs/krew

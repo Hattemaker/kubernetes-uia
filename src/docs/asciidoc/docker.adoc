@@ -9,8 +9,12 @@
   ** Raskere oppstart og restart.
 * Docker er den mest brukte container-løsningen.
 
-== !
-image::images/containers-vs-vms.png[container,90%,90%]
+== Flere prosesser på en maskin
+ * kronglete å begrense ressurser
+ * kan være vanskelig å ha unik versjon av en avhengighet
+ * ip/Port sjonglering
+ * Hvis en server må boote så må man ta ned med enn 1 ting
+
 
 == Begreper
 // Et sett med kommandoer
@@ -36,6 +40,8 @@ plantuml::docker.puml["docker", "png"]
 ----
 include::../../../apps/greeter/Dockerfile[]
 ----
+
+// Lagdeling bilde
 
 == Image er lagdelt
 * Hver kommando i Dockerfile oppretter et lag.
@@ -82,4 +88,3 @@ image::images/image-tags.png[tags]
 * Docker Compose
 * Docker Swarm
 
-== Pause
