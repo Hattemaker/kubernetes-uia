@@ -11,22 +11,22 @@ Demo av Docker
 CGO_ENABLED=0 GOOS=linux go build
 
 # Bygg Docker Image
-docker build -t uia-app .
+docker build -t greeter .
 
 # Evt bygg til en egen tag
-# docker build -t uia:1 .
+# docker build -t greeter:1 .
 
 # Start Docker containeren
 # Binder lokal port til container port. <lokal>:<container>
-docker run -p 8080:8080 uia-app
+docker run -p 8080:8080 greeter
 
 # Push til DockerHub
 
 docker login
 
-docker tag uia-app:latest <repo>/uia-app:latest
+docker tag greeter:latest <repo>/greeter:latest
 
-docker push <repo>/uia-app:latest
+docker push <repo>/greeter:latest
 ```
 
 ## Kjekke kommandoer

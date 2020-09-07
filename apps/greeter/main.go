@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	podName := os.Getenv("NAME")
+	name := os.Getenv("NAME")
 	version := os.Getenv("VERSION")
 
 	log.Printf("Application version %s\n", version)
@@ -30,8 +30,8 @@ func main() {
 		var fromName string
 		if r.URL.Path != "/" && len(paths) >= 2 {
 			fromName = paths[1]
-		} else if podName != "" {
-			fromName = podName
+		} else if name != "" {
+			fromName = name
 		} else {
 			fromName = "App"
 		}
