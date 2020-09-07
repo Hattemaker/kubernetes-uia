@@ -6,7 +6,8 @@
 
 Det er fint om man før man kommer i workshop/forelesning kan installere følgende vertøy:
  * https://www.docker.com/products/docker-desktop
-   * på linux installer docker kubernetes-cli og microk8s eller en annen lokal kubernetes distribusjon
+   * fint om man har prøvd å starte opp kubernetes fra docker desktop
+   * på linux installer docker, kubernetes-cli og microk8s eller en annen lokal kubernetes distribusjon
  * https://github.com/digitalocean/doctl
    * Hvis man vil gjøre handson demo her er det fint om man har en konto på digital ocean også
 
