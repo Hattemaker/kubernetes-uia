@@ -24,7 +24,7 @@
 == Pod Eksempel
 [source,yaml]
 ----
-include::kubernetes/pod.yaml[]
+include::../../../kubernetes/pod.yaml[]
 ----
 == Service
 - minste deploybare enhet for å lastbalansere og styre trafikk til applikasjoner
@@ -33,7 +33,7 @@ include::kubernetes/pod.yaml[]
 == Service Eksempel
 [source,yaml]
 ----
-include::kubernetes/service.yaml[]
+include::../../../kubernetes/service.yaml[]
 ----
 
 == !
@@ -53,7 +53,7 @@ include::kubernetes/service.yaml[]
 == Deployment Eksempel
 [source,yaml]
 ----
-include::kubernetes/deployment.yaml[]
+include::../../../kubernetes/deployment.yaml[]
 ----
 
 == Demo livssyklus

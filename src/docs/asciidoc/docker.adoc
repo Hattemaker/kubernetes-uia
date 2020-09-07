@@ -3,7 +3,7 @@
   ** Kode.
   ** Konfigurasjon.
   ** Tilhørende verktøy.
-* Sammen lignet med VM så:
+* Sammenlignet med VM så:
   ** Tar containere opp mindre diskplass enn VM.
   ** Bruker mindre minne.
   ** Raskere oppstart og restart.
