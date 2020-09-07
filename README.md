@@ -4,6 +4,13 @@
 - kubernetes: manifest filer for å deploye applikasjon til kubernetes
 - src/docs/asciidocs: her ligger slidene som asciidoc filer
 
+Det er fint om man før man kommer i workshop/forelesning kan installere følgende vertøy:
+ * https://www.docker.com/products/docker-desktop
+   * på linux installer docker kubernetes-cli og microk8s eller en annen lokal kubernetes distribusjon
+ * https://github.com/digitalocean/doctl
+   * Hvis man vil gjøre handson demo her er det fint om man har en konto på digital ocean også
+
+
 ## Hvordan bygge slidene til en revlewjs presentasjon
 
 `./gradlew`
@@ -43,3 +50,11 @@ Det finnes mange forskjellige teknikker og verktøy for å konfigurere kubernete
   - https://github.com/derailed/k9s
   - https://github.com/lensapp/lens
   - https://github.com/kubernetes-sigs/krew
+  
+#### Kjekke kubernetes kommandoer
+Kubectl kommandoen har veldig god hjelp, så lurer du på noe ville jeg startet med å se der. 
+
+ - `alias k=kubectl` hvis man er lat og ikke vil skrive kubectl hele tiden 
+ - `k explain pod` for å forklare hvordan en ressurs ser ut
+ - `k explain pod.status` for å forklare hvordan en underressurs ser ut
+ - `k api-resources` for å liste alle ressurser man har
