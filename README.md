@@ -51,8 +51,9 @@ Det finnes mange forskjellige teknikker og verktøy for å konfigurere kubernete
   - https://github.com/derailed/k9s
   - https://github.com/lensapp/lens
   - https://github.com/kubernetes-sigs/krew
+  - https://github.com/wercker/stern
   
-#### Kjekke kubernetes kommandoer
+#### Kjekke kubectl kommandoer
 Kubectl kommandoen har veldig god hjelp, så lurer du på noe ville jeg startet med å se der. 
 
  - `alias k=kubectl` hvis man er lat og ikke vil skrive kubectl hele tiden 
