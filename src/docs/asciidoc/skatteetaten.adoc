@@ -12,8 +12,8 @@
 == Byggekontrakt
 * Deklerativ CI logikk med Jenkins og Jenkinsfile
 * Produsererer zip fil av en applikasjon som lagres sentralt
-** openshift/metadata.json
-** oppstarts parametres
+** metadata
+** parametre til applikasjonen
 ** evt biblioteker
 * Semantisk versjonering
 
@@ -28,10 +28,5 @@
 * microservices/ 12-faktor
 * kan og vil bli drept hvis plattformen krever det
 * separere app og administrasjonstrafikk
-* bruk delt logback konfigurasjon
+* bruk delt logge konfigurasjon
 * management interface
-** /actuator
-** /info
-** /health
-** /prometheus
-** /env

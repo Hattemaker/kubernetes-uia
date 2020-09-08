@@ -5,7 +5,7 @@
  - Vi er her for å hjelpe
 
 == Docker oppgave
- - Trekke ut relevante deler av repeater og greeter ti et student-app baseimage_
+ - Trekke ut relevante deler av repeater og greeter til et student-app baseimage_
  - klargjøre en applikasjon dere tidligere har laget for Docker
 
 == Kubernetes oppgave

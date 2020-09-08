@@ -5,16 +5,17 @@ Espen Strømland <espen.stromland@skatteetaten.no> & Bjarte Karlsen <bjarte.karl
 
 == Hvem er vi?
 * Bjarte Stien Karlsen
-  ** Ferdig utdannet 2005, startet i Skatteetaten våren 2015.
+  ** Ferdig utdannet 2005, startet i Skatteetaten våren 2015
   ** Arkitekt og utvikler.
-  ** UiA og NTNU, Master informatikk
+  ** Master informatikk fra NTNU
 * Espen Strømland
   ** Ferdig utdannet 2015, startet i Skatteetaten våren 2016
   ** Teamleder og utvikler.
+  ** Bachelor IT og Informasjonsystemer fra UiA
 
 == !
 [.single-headline2]
-Alle på vårt team har gått på UiA Grimstad / Kristiansand.
+Alle på vårt team har gått på UiA.
 
 == Litt om Skatteetaten
 * 500+ utviklere, ca 6700 totalt.
