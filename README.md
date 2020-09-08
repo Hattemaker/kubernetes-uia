@@ -1,5 +1,6 @@
 # Docker og Kubernetes presentasjon/workshop for UiA
 
+Innholdet i dette repo:
 - apps: i denne mappen ligger applikasjonene vi skal jobbe med i denne presentasjonen
 - kubernetes: manifest filer for å deploye applikasjon til kubernetes
 - src/docs/asciidocs: her ligger slidene som asciidoc filer
@@ -11,13 +12,14 @@ Det er fint om man før man kommer i workshop/forelesning kan installere følgen
  * https://github.com/digitalocean/doctl
    * Hvis man vil gjøre handson demo her er det fint om man har en konto på digital ocean også
 
+Hvis du har noen spørsmål før, under eller etter workshop og foretrekker å stille dem skriftlig så lag en issue/sak i dette github repo
+så skal vi svare så godt vi kan.
 
-## Hvordan bygge slidene til en revlewjs presentasjon
+## Hvordan bygge slidene til en  presentasjon
 
-`./gradlew`
+`make doc`
 
 Slidene blir da lagt i `build/docs` mappen
-
 
 ## Ressurser
 
