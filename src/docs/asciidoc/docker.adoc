@@ -1,20 +1,15 @@
+== Problemet med flere prosesser på en maskin
+* Deler avhengigheter
+* Vansklig å begerense ressurser.
+  ** To Java-applikasjoner vil slåss om CPU.
+* Nettverk
+  ** Må ha kontroll på hvilke porter som er i bruk.
+
 == Hvorfor containere?
-* Isolert applikasjonsmiljø.
-  ** Kode.
-  ** Konfigurasjon.
-  ** Tilhørende verktøy.
-* Sammenlignet med VM så:
-  ** Tar containere opp mindre diskplass enn VM.
-  ** Bruker mindre minne.
-  ** Raskere oppstart og restart.
-* Docker er den mest brukte container-løsningen.
-
-== Flere prosesser på en maskin
- * kronglete å begrense ressurser
- * kan være vanskelig å ha unik versjon av en avhengighet
- * ip/Port sjonglering
- * Hvis en server må boote så må man ta ned med enn 1 ting
-
+* Distribuere applikasjon med avhenigheter.
+  ** Isolert applikasjonsmiljø
+* Mulighet for å ressursstyre containere.
+* Kunne kjøre applikasjonen uavhengig av arkitektur.
 
 == Begreper
 // Et sett med kommandoer

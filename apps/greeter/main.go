@@ -36,7 +36,7 @@ func main() {
 			fromName = "App"
 		}
 
-		fmt.Fprintf(w, "Hei, Uia! Hilsen %s.\nTime %s\nVersion %s\n", fromName, time.Now().Local(), version)
+		fmt.Fprintf(w, "Hei, UiA! Hilsen %s.\nTime %s\nVersion %s\n", fromName, time.Now().Local(), version)
 	})
 
 	log.Println("Starting server on port 8080")
