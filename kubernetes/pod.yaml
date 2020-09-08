@@ -7,7 +7,6 @@ metadata:
 spec:
     containers:
         -   image: stromland/greeter:1
-            imagePullPolicy: Always
             name: greeter
             ports:
                 -   containerPort: 8080

@@ -1,5 +1,5 @@
 #apply the pod resource
-pod: service
+pod: namespace service
 	kubectl apply -f pod.yaml -n uia
 
 #apply the service
@@ -56,4 +56,19 @@ get-pods:
 	kubectl get pod -o json | jq '.'
 
 delete:
-	kubectl delete all -l app=greeter
+	kubectl delete ns uia
+
+get-service:
+	kubectl get service -o json | jq '.'
+get-rs:
+	kubectl get replicaset
+
+get-endpoint:
+	kubectl get endpoints
+
+context:
+	kubectl config get-contexts
+
+namespace:
+	kubectl create namespace uia
+

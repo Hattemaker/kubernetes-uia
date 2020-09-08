@@ -5,16 +5,20 @@
  * ønsket en 'industrialisert' plattform hvor team kan være produktive.
 
 == Aurora Plattform
+ * https://github.com/skatteetaten
  * https://skatteetaten.github.io/aurora/
  * implementasjonen av plattformen er skjult for utviklerne
  * 3 formelle kontrakter
 
 == Byggekontrakt
-* Deklerativ CI logikk med Jenkins og Jenkinsfile
+* deklerativ pipeline for hvordan bygge en applikasjon
+** jenkins og jenkinsfile
 * Produsererer zip fil av en applikasjon som lagres sentralt
 ** metadata
 ** parametre til applikasjonen
 ** evt biblioteker
+* sentralisert bygger som bygger docker imagene
+** http://github.com/skatteetaten/architect
 * Semantisk versjonering
 
 == Deploykontrakt

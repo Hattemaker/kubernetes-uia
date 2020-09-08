@@ -47,9 +47,13 @@ include::../../../kubernetes/pod.yaml[]
 include::../../../kubernetes/service.yaml[]
 ----
 
+// 10 min
+
 == !
 [.single-headline2]
 demo: kjøre vår app på Kubernetes via Docker for Mac
+
+// 5 min
 
 == Hva er problemet med denne løsningen?
  - Hvis poden forsvinner er den borte
@@ -67,12 +71,16 @@ demo: kjøre vår app på Kubernetes via Docker for Mac
 include::../../../kubernetes/deployment.yaml[]
 ----
 
+// 5 min
+
 == Demo livssyklus
  * fjerne gammel pod
  * deploy med deployment
  * vise
  ** rullerende oppgradering
  ** rulle tilbake ved feil
+
+// 5 min
 
 == Ressurser
 plantuml::kubernetes.puml["kubernetes","png"]
@@ -85,3 +93,4 @@ plantuml::kubernetes.puml["kubernetes","png"]
 
 == !
 image::images/kubernetes-architecture.png[canvas, size=cover]
+// 10 min
