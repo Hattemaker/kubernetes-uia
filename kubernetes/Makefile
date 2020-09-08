@@ -1,5 +1,5 @@
 #apply the pod resource
-pod: service
+pod: delete-deployment service
 	kubectl apply -f pod.yaml -n uia
 
 #apply the service
@@ -9,6 +9,9 @@ service:
 #delete the pod resource
 delete-pod:
 	kubectl delete -f pod.yaml -n uia
+
+delete-deployment :
+	kubectl delete -f deployment.yaml -n uia
 
 #apply the depoyment resource
 deployment: delete-pod service
