@@ -1,5 +1,5 @@
 #apply the pod resource
-pod: delete-deployment service
+pod: service
 	kubectl apply -f pod.yaml -n uia
 
 #apply the service
@@ -18,8 +18,16 @@ deployment: delete-pod service
 	kubectl apply -f deployment.yaml -n uia
 
 #upgrade the version in the pod
-upgrade-pod:
+pod2:
 	kubectl set image pod greeter greeter=stromland/greeter:2
+
+pod1:
+	kubectl set image pod greeter greeter=stromland/greeter:1
+
+
+pod3:
+	kubectl set image pod greeter greeter=stromland/greeter:3
+
 
 #set the image running to 1
 v1:
@@ -40,3 +48,12 @@ watch:
 #Watch all the logs for all pods starting with greeter
 logs:
 	stern greeter -n uia
+
+get-pod:
+	kubectl get pod greeter -o json | jq '.'
+
+get-pods:
+	kubectl get pod -o json | jq '.'
+
+delete:
+	kubectl delete all -l app=greeter

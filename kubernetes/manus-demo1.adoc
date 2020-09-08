@@ -1,0 +1,14 @@
+# Demo: Kjøre en pod
+
+- Vise at Docker Desktop for mac kjører
+- Forklare hva en context er og hvordan man bytter mellom dem
+  * namespace
+- setup
+  * make log i side vindu
+  * make watch i top vindu
+- deploye pod
+  * make pod
+- hva har vi laget nå.
+  * make get pod
+- deploye ny versjon til pod og se at man mister trafikk
+    * make pod1, pod2, pod3

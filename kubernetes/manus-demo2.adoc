@@ -1,0 +1,11 @@
+# Demo: Kjøre en deployment
+
+ - setup
+   * make log i side vindu
+   * make watch i top vindu
+ - deploy deployment
+   * make deployment
+ - hva har vi laget nå.
+  * make getpods
+ - deploye ny versjon til pod og se at man mister trafikk
+   * make v1, v2, v3

@@ -16,19 +16,30 @@
  * konfigurasjon er ønsket tilstand
  * apiGrupper og ressurser
  * merkelapper (labels)
+ ** koblinger gjøres med selectorer på labels
+
+== Namespace
+ - gruppering av ressurser
+ - rolle basert tilgangskontroll
+ - ressurser kan være namespaced eller ikke
 
 == Pod
 - en pod er den minste 'deploybare' enheten på kubernetes
+** en pod kan ha flere containere, men vårt eksempel har bare 1
+** alle containere i en pod kjører på samme maskin/ip
 - alle andre høyere nivå konsepter har Pods i bunnen
+- ressursen er namespaced
 
 == Pod Eksempel
 [source,yaml]
 ----
 include::../../../kubernetes/pod.yaml[]
 ----
+
 == Service
 - minste deploybare enhet for å lastbalansere og styre trafikk til applikasjoner
 - opererer på ip/port nivå
+- ressursen er namespaced
 
 == Service Eksempel
 [source,yaml]
