@@ -27,16 +27,18 @@ func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		paths := strings.Split(r.URL.Path, "/")
 
-		var fromName string
+    from:= r.UserAgent()
 		if r.URL.Path != "/" && len(paths) >= 2 {
-			fromName = paths[1]
-		} else if name != "" {
-			fromName = name
-		} else {
-			fromName = "App"
+			from= paths[1]
 		}
 
-		fmt.Fprintf(w, "Hei, UiA! Hilsen %s.\nTime %s\nVersion %s\n", fromName, time.Now().Local(), version)
+		if name == "" {
+		  name = "App"
+		}
+
+		fmt.Fprintf(w, "Jeg er %s og kjører i versjon %s\n", name, version)
+		fmt.Fprintf(w, "Jeg har fått melding fra %s\n", from)
+		fmt.Fprintf(w, "Klokken er: %s\n", time.Now().Local())
 	})
 
 	log.Println("Starting server on port 8080")

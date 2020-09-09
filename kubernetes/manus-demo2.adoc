@@ -9,3 +9,8 @@
   * make getpods
  - deploye ny versjon til pod og se at man mister trafikk
    * make v1, v2, v3
+
+ - Deploye repeater
+   * make repeater
+
+ - vise trafikk til repeater

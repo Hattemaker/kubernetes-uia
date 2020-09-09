@@ -12,4 +12,4 @@
 - hva har vi laget nå.
   * make get pod
 - deploye ny versjon til pod og se at man mister trafikk
-    * make pod1, pod2, pod3
+    * make pod-fail

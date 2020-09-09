@@ -7,9 +7,11 @@
 == Docker oppgave
  - Trekke ut relevante deler av repeater og greeter til et student-app baseimage_
  - klargjøre en applikasjon dere tidligere har laget for Docker
+ - Ser du noen problemer med Dokerfile vi har brukt for greeter/repeater?
 
 == Kubernetes oppgave
  - https://github.com/digitalocean/doks-example
  - Alternativt: Lage manifester for en applikasjone dere har laget tidligere
  - Tilpass greeter appen slik at den leser en miljøvariabel fra en ConfigMap
+ - Hva skjer hvis man ikke har satt Readiness Probe i en Deployment?
 

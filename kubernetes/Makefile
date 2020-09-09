@@ -18,25 +18,27 @@ delete-deployment :
 deployment: delete-pod service
 	kubectl apply -f deployment.yaml
 
-#upgrade the version in the pod
-pod1:
-	kubectl set image pod greeter greeter=stromland/greeter:1
-pod2:
-	kubectl set image pod greeter greeter=stromland/greeter:2
-pod3:
-	kubectl set image pod greeter greeter=stromland/greeter:3
+#upgrade the version in the pod that will fail, not existant versjon
+pod-fail:
+	kubectl set image pod greeter greeter=stromland/greeter:0
 
 #set the image running for a deployment
 v1:
 	kubectl set image deployment greeter greeter=stromland/greeter:1
 v2:
 	kubectl set image deployment greeter greeter=stromland/greeter:2
+
+#this should fail because the application will not start
 v3:
 	kubectl set image deployment greeter greeter=stromland/greeter:3
 
-#every 0.5 second send a http request to port 8080
-watch:
-	watch -n 0.5 http :8080
+#this fails becase the image does not exist
+v4:
+	kubectl set image deployment greeter greeter=stromland/greeter:4
+
+#every 0.5 second call repeater
+watch-repeat:
+	watch -n 0.5 http :8090
 
 #Watch all the logs for all pods starting with greeter
 logs:
@@ -73,3 +75,10 @@ context:
 # Create the namespace
 namespace:
 	kubectl create namespace uia
+
+#Deplye greeter deployment and service
+repeater:
+	kubectl apply -f repeater.yaml
+
+logs-repeater:
+	stern repeater -n uia

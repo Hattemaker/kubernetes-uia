@@ -55,7 +55,9 @@ Det finnes mange forskjellige teknikker og verktøy for å konfigurere kubernete
   - https://github.com/derailed/k9s
     - anbefalt terminal/curses gui
   - https://github.com/kubernetes-sigs/krew
+    - installere utvidelser til kubectl
   - https://github.com/wercker/stern
+    - taile logge
   - https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
     - denne er litt knotete å sette opp 
     - må trikse litt for å få auth til å funke på Docker Desktop https://forums.docker.com/t/docker-for-mac-kubernetes-dashboard/44116/9
