@@ -1,6 +1,7 @@
 # Demo: Kjøre en pod
 
 - Vise at Docker Desktop for mac kjører
+- Vise Lens GUI, forklare at det finnes mange alternativer
 - Forklare hva en context er og hvordan man bytter mellom dem
   * namespace
 - setup

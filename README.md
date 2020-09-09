@@ -50,10 +50,15 @@ Det finnes mange forskjellige teknikker og verktøy for å konfigurere kubernete
  - https://skatteetaten.github.io/aurora/ 
  
  Verktøy for å jobbe med kubernetes som kan være fine å vite om er:
-  - https://github.com/derailed/k9s
   - https://github.com/lensapp/lens
+    - anbefalt GUI 
+  - https://github.com/derailed/k9s
+    - anbefalt terminal/curses gui
   - https://github.com/kubernetes-sigs/krew
   - https://github.com/wercker/stern
+  - https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
+    - denne er litt knotete å sette opp 
+    - må trikse litt for å få auth til å funke på Docker Desktop https://forums.docker.com/t/docker-for-mac-kubernetes-dashboard/44116/9
   
 #### Kjekke kubectl kommandoer
 Kubectl kommandoen har veldig god hjelp, så lurer du på noe ville jeg startet med å se der. 

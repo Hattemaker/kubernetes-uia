@@ -10,6 +10,10 @@
  * implementasjonen av plattformen er skjult for utviklerne
  * 3 formelle kontrakter
 
+== Verktøy
+ * egen kommando linje klient `ao`
+ * et web-gui for å se "lite" om "mye" siden de eksisterende verktøyene er motsatt
+
 == Byggekontrakt
 * deklerativ pipeline for hvordan bygge en applikasjon
 ** jenkins og jenkinsfile
