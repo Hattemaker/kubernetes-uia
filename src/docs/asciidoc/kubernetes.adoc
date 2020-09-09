@@ -82,6 +82,12 @@ include::../../../kubernetes/deployment.yaml[]
 
 // 5 min
 
+== Repeater
+[source,yaml]
+----
+include::../../../kubernetes/repeater.yaml[]
+----
+
 == Ressurser
 plantuml::kubernetes.puml["kubernetes","png"]
 
@@ -92,5 +98,5 @@ plantuml::kubernetes.puml["kubernetes","png"]
 - DaemonSet
 
 == !
-image::images/kubernetes-architecture.png[canvas, width=90%]
+image::images/kubernetes-architecture.png[width=100%]
 // 10 min

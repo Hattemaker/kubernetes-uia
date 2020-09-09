@@ -5,7 +5,7 @@
   "groupId": "no.skatteetaten.aurora.demo",
   "affiliation" : "demo",
   "permissions" : {
-    "admin" : "APP_PaaS_drift APP_PaaS_utv"
+    "admin" : "APP_demo_drift APP_demo_utv"
   },
   "version" : "1.0-SNAPSHOT",
   "route" : true

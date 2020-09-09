@@ -37,8 +37,8 @@ v4:
 	kubectl set image deployment greeter greeter=stromland/greeter:4
 
 #every 0.5 second call repeater
-watch-repeat:
-	watch -n 0.5 http :8090
+watch:
+	watch -n 0.5 http :8080
 
 #Watch all the logs for all pods starting with greeter
 logs:

@@ -16,11 +16,14 @@
 
 
 == !
-image::images/konsoll.png[canvas, width=90%]
+image::images/konsoll-overview.png[width=100%]
+
+== !
+image::images/konsoll.png[]
 
 
 == !
-image::images/ao.png[canvas, width=90%]
+image::images/ao.png[]
 
 == Byggekontrakt
 * deklarativ pipeline for hvordan bygge en applikasjon
