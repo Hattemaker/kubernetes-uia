@@ -39,6 +39,7 @@ nivå abstraksjoner som det kan være verd å se på:
 
  - [Intoduksjon til kubernetes](https://www.digitalocean.com/community/tutorials/an-introduction-to-kubernetes)
  - [Kuberetes dokumentasjon](https://kubernetes.io/docs/home/)
+ - [Kubernetes Patterns bok](https://www.redhat.com/cms/managed-files/cm-oreilly-kubernetes-patterns-ebook-f19824-201910-en.pdf)
   
 Det finnes mange forskjellige teknikker og verktøy for å konfigurere kubernetes. Under er en liten, men ikke utfyllende, liste med relevant materiale for de som er interessert. 
 

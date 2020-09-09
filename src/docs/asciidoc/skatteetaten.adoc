@@ -14,8 +14,16 @@
  * egen kommando linje klient `ao`
  * et web-gui for å se "lite" om "mye" siden de eksisterende verktøyene er motsatt
 
+
+== !
+image::images/konsoll.png[canvas, width=90%]
+
+
+== !
+image::images/ao.png[canvas, width=90%]
+
 == Byggekontrakt
-* deklerativ pipeline for hvordan bygge en applikasjon
+* deklarativ pipeline for hvordan bygge en applikasjon
 ** jenkins og jenkinsfile
 * Produsererer zip fil av en applikasjon som lagres sentralt
 ** metadata
@@ -23,7 +31,6 @@
 ** evt biblioteker
 * sentralisert bygger som bygger docker imagene
 ** http://github.com/skatteetaten/architect
-* Semantisk versjonering
 
 == Deploykontrakt
 * deklarativ AuroraConfig
@@ -32,9 +39,51 @@
 ** latest, ingen brekkende endringer, nye features, nye feilfikser, 'patcher', låst, samme som produksjon, SNAPSHOT
 * deploy vil overskrive eksisterende state
 
+== Aurora Config
+* 4 konfigfiler som til sammen blir en konfigurasjon
+* about.json : globalfil
+* whoami.json : basefil
+* utv/about.json : miljøfil
+* utv/whoami.json : applikasjonsfil
+
+== Globalfil
+[source,json]
+.about.json
+----
+include::script/about.json[]
+----
+
+== Basefil
+[source,json]
+.whoami.json
+----
+include::script/whoami.json[]
+----
+
+== Miljøfil
+[source,json]
+.utv/about.json
+----
+include::script/utv/about.json[]
+----
+
+== Applikasjonsfil
+[source,json]
+.utv/whoami.json
+----
+include::script/utv/whoami.json[]
+----
+
+== Sammenslått konfigurasjon
+[source,json]
+.utv/whoami
+----
+include::script/whoami-final.json[]
+----
+
 == Kjørekontrakt
 * microservices/ 12-faktor
-* kan og vil bli drept hvis plattformen krever det
-* separere app og administrasjonstrafikk
-* bruk delt logge konfigurasjon
 * management interface
+  - separere app og admin trafikk på forskjellige porter
+* kan og vil bli drept hvis plattformen krever det
+* bruk delt logge konfigurasjon

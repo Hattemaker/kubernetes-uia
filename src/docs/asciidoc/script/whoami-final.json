@@ -1,0 +1,12 @@
+{
+  "schemaVersion" : "v1",
+  "type" : "development",
+  "cluster" : "utv",
+  "groupId": "no.skatteetaten.aurora.demo",
+  "affiliation" : "demo",
+  "permissions" : {
+    "admin" : "APP_PaaS_drift APP_PaaS_utv"
+  },
+  "version" : "1.0-SNAPSHOT",
+  "route" : true
+}

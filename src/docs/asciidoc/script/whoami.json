@@ -1,0 +1,6 @@
+{
+  "groupId": "no.skatteetaten.aurora.demo",
+  "version" : "1",
+  "replicas" : "3",
+  "route" : true
+}

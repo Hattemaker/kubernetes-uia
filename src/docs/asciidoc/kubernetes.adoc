@@ -92,5 +92,5 @@ plantuml::kubernetes.puml["kubernetes","png"]
 - DaemonSet
 
 == !
-image::images/kubernetes-architecture.png[canvas, size=cover]
+image::images/kubernetes-architecture.png[canvas, width=90%]
 // 10 min

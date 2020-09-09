@@ -1,0 +1,7 @@
+{
+  "schemaVersion" : "v1",
+  "affiliation" : "demo",
+  "permissions" : {
+    "admin" : "APP_demo_drift APP_demo_utv"
+  }
+}
