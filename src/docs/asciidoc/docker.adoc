@@ -12,6 +12,9 @@
 * Kunne kjøre applikasjonen uavhengig av arkitektur.
 * Deler kjerne med host. 
 
+== !
+image::images/docker-layers.png[layers]
+
 == Begreper
 // Et sett med kommandoer
 // Beskriver hva og hvordan innhold skal kjøres. Pakkes til et image.
@@ -36,9 +39,6 @@ plantuml::docker.puml["docker", "png"]
 ----
 include::../../../apps/greeter/Dockerfile[]
 ----
-
-== !
-image::images/image-tags.png[tags]
 
 == Image er lagdelt
 * Hver kommando i Dockerfile oppretter et lag.
