@@ -1,4 +1,4 @@
-== Problemet med flere prosesser på en maskin
+== Problemet med flere applikasjoner på en maskin
 * Deler avhengigheter
 * Vansklig å begerense ressurser.
   ** To Java-applikasjoner vil slåss om CPU.
@@ -9,8 +9,7 @@
 * Distribuere applikasjon med avhenigheter.
   ** Isolert applikasjonsmiljø
 * Mulighet for å ressursstyre containere.
-* Kunne kjøre applikasjonen uavhengig av arkitektur.
-* Deler kjerne med host. 
+* Enklere å sette opp nettverkstrafikk mot applikasjonene.
 
 == !
 image::images/docker-layers.png[layers]
@@ -68,6 +67,7 @@ image::images/image-tags.png[tags]
   ** DockerHub (Mest kjent)
   ** Quay (Red Hat)
   ** Google-, Azure-, Amazon (elastic) container registry
+  ** Nexus Container Registry
 
 == Demo
 // Vis app
