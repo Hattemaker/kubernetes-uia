@@ -10,6 +10,7 @@
   ** Isolert applikasjonsmiljø
 * Mulighet for å ressursstyre containere.
 * Kunne kjøre applikasjonen uavhengig av arkitektur.
+* Deler kjerne med host. 
 
 == Begreper
 // Et sett med kommandoer
@@ -36,7 +37,8 @@ plantuml::docker.puml["docker", "png"]
 include::../../../apps/greeter/Dockerfile[]
 ----
 
-// Lagdeling bilde
+== !
+image::images/image-tags.png[tags]
 
 == Image er lagdelt
 * Hver kommando i Dockerfile oppretter et lag.
@@ -52,7 +54,7 @@ include::../../../apps/greeter/Dockerfile[]
 
 image::images/image-tags.png[tags]
 
-== Kjør containere med minste privilegier
+== Container
 * Ikke mulig å kunne gjøre endring på host fra en container.
 * Containere deler kjerne med host.
 * Hvis noen skulle finne sikkerhetshull i kernel så kan dette potensielt utnyttes fra containeren.
