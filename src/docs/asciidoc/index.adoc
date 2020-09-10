@@ -59,6 +59,10 @@ include::skatteetaten.adoc[]
 
 == !
 [.single-headline2]
+Pause
+
+== !
+[.single-headline2]
 Hands-On
 
 include::handson.adoc[]

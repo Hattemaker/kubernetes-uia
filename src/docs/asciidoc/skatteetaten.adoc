@@ -85,7 +85,7 @@ include::script/whoami-final.json[]
 ----
 
 == Kjørekontrakt
-* microservices/ 12-faktor
+* microservices/12-faktor
 * management interface
   - separere app og admin trafikk på forskjellige porter
 * kan og vil bli drept hvis plattformen krever det

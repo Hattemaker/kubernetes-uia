@@ -9,10 +9,8 @@
 * Distribuere applikasjon med avhenigheter.
   ** Isolert applikasjonsmiljø
 * Mulighet for å ressursstyre containere.
-* Enklere å sette opp nettverkstrafikk mot applikasjonene.
+  * Enklere å sette opp nettverkstrafikk mellom applikasjoner.
 
-== !
-image::images/docker-layers.png[layers]
 
 == Begreper
 // Et sett med kommandoer
@@ -60,6 +58,9 @@ image::images/image-tags.png[tags]
 * Best practice: Ikke kjør containeren som root-bruker.
   ** Konfigureres i Dockerfile
 
+== !
+image::images/docker-layers.png[layers]
+
 == Container Registry
 * Lokal registry
   ** `docker images`
@@ -80,8 +81,3 @@ image::images/image-tags.png[tags]
 // Vise noen kjekke docker kommandoer
 // - Publiser image til DockerHub
 // - Start Image fra DockerHub
-
-== Annet
-* Docker Compose
-* Docker Swarm
-
